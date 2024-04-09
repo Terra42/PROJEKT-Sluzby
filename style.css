@@ -1,75 +1,97 @@
-body{top: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 500px;
-    height: 1657px;
-    background: var(--pozadí-stránky) 0% 0% no-repeat padding-box;
-    background: #FAFAFA 0% 0% no-repeat padding-box;
-    opacity: 1;
-    text-align:center;
-    font-family: "Montserrat", sans-serif;
-    box-sizing: border-box;
-    margin: 0;}
-
-.img-happy{text-align: center;}
-
-h1 {font-family: "Montserrat", sans-serif; 
-    font-size: 28px;
-    font-weight: medium;
-    color:black;
-    text-align:center;}
-
-p{font-family: "Montserrat", sans-serif; 
-    font-size: 16px;
-    font-weight: light;
-    color:black;}
-
-h2 {font-family: "Montserrat", sans-serif; 
-    font-size: 16px;
-    font-weight: light;
-    color:black;}
-
-.button-1{
-        font-family: "Montserrat", sans-serif; 
-        font-size: 14px;
-        font-weight: regular;
-        opacity: 1;
-        color: white;
-        border-radius:20px;
-        border-color:#407BFF;
-        background:#407BFF 0% 0% no-repeat padding-box;;
-        width: 195px;
-        height: 40px;}
-
-.button-2{font-family: "Montserrat", sans-serif; 
-    font-size: 14px;
-    font-weight: regular;
-    opacity: 1;
-    color: white;
-    border-radius:20px;
-    border-color:#8B8B8B;
-    background:#8B8B8B 0% 0% no-repeat padding-box;
-    width: 220px;
-    height: 40px;}
-
-.tlacitka{display:flex;}
-
-.box {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    box-shadow: 0px 4px 6px #407BFF1F;
-    border-radius: 10px;
-    text-align: center;
-    opacity: 1;
-    letter-spacing: 0px;
-    color: #8B8B8B;
-    width: 460px;
-    height: 80px;
-    margin: 20px 15px 20px 15px;
+body {
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom:60px;
+  background: #fafafa 0% 0% no-repeat padding-box;
+  opacity: 1;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.img{margin: 20px 0px 20px 20px;
+.img-happy {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  color: black;
+  text-align: center;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #8B8B8B;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.tlacitka{display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+.button-1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  opacity: 1;
+  color: white;
+  border-radius: 20px;
+  border-color: #407bff;
+  border: 2px solid white;
+  background: #407bff 0% 0% no-repeat padding-box;
+  width: 195px;
+  height: 40px;
+}
+
+.button-2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  opacity: 1;
+  color: white;
+  border-radius: 20px;
+  border-color: #8b8b8b;
+  border: 2px solid white;
+  background: #8b8b8b 0% 0% no-repeat padding-box;
+  width: 220px;
+  height: 40px;
+}
+
+.box {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 6px #407bff1f;
+  border-radius: 10px;
+  justify-content: center;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #8b8b8b;
+  margin: 20px 15px 20px 15px;
+  display:flex;
+}
+
+.box img{
+  padding: 20px 0px 20px 20px;
+}
+
+.box text{
+
 }
 
 @media screen and (min-width: 640px){
-    .tlacitka {display:block;}
+.box{
+flex-direction: row;
+flex-basis: calc(100÷3)}
+.tlacitka{
+  flex-direction: row;
+ }
+ .kontejner{display: flex;
+ flex-basis: calc(100÷3)}
 }
