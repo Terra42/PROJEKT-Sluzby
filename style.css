@@ -22,7 +22,7 @@ h1 {font-family: "Montserrat", sans-serif;
 p{font-family: "Montserrat", sans-serif; 
     font-size: 16px;
     font-weight: light;
-    color:grey;}
+    color:black;}
 
 h2 {font-family: "Montserrat", sans-serif; 
     font-size: 16px;
@@ -70,6 +70,6 @@ h2 {font-family: "Montserrat", sans-serif;
 .img{margin: 20px 0px 20px 20px;
 }
 
-@media screen and {min-width: 640px;
+@media screen and (min-width: 640px){
     .tlacitka {display:block;}
 }
