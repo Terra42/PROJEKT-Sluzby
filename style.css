@@ -1,9 +1,6 @@
 body {
-  padding-top: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom:60px;
-  background: #fafafa 0% 0% no-repeat padding-box;
+  padding: 60px 20px 20px 60px;
+  background: #fafafa;
   opacity: 1;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -20,6 +17,7 @@ h1 {
   font-size: 28px;
   color: black;
   text-align: center;
+  margin-block: 40px;
 }
 
 p {
@@ -36,18 +34,20 @@ h2 {
 
 .tlacitka{display: flex;
   flex-direction: column;
+  margin:0;
   justify-content: center;
- }
+  align-items: center;
+  }
 
 .button-1 {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  opacity: 1;
   color: white;
+  opacity:1;
   border-radius: 20px;
   border-color: #407bff;
   border: 2px solid white;
-  background: #407bff 0% 0% no-repeat padding-box;
+  background: #407bff;
   width: 195px;
   height: 40px;
 }
@@ -55,34 +55,39 @@ h2 {
 .button-2 {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  opacity: 1;
   color: white;
+  opacity:1;
   border-radius: 20px;
   border-color: #8b8b8b;
   border: 2px solid white;
-  background: #8b8b8b 0% 0% no-repeat padding-box;
+  background: #8b8b8b;
   width: 220px;
   height: 40px;
 }
 
 .box {
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background: #ffffff;
   box-shadow: 0px 4px 6px #407bff1f;
   border-radius: 10px;
-  justify-content: center;
   opacity: 1;
-  letter-spacing: 0px;
   color: #8b8b8b;
-  margin: 20px 15px 20px 15px;
+  margin: 15px 20px 20px 15px;
+  width: 460px;
   display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-block:30px;
+  overflow: auto;
 }
 
 .box img{
-  padding: 20px 0px 20px 20px;
+  justify-content: left;
+  padding: 20px 0 20px 20px;
 }
 
 .box text{
-
+  justify-content:right;
+  padding: 32px 20px 20px 94px;
 }
 
 @media screen and (min-width: 640px){
@@ -93,5 +98,11 @@ flex-basis: calc(100÷3)}
   flex-direction: row;
  }
  .kontejner{display: flex;
- flex-basis: calc(100÷3)}
+  }
+ .box{
+  flex:1 1 calc(100÷3)}
+}
+.box img{
+  justify-self: center;
+  align-content: start;
 }
